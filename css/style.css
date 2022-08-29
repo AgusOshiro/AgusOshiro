@@ -18,7 +18,7 @@ p {
 
 /* HEADER */
 .header {
-    position: sticky !important;
+    
     top: 0;
     height: 5, 5rem;
     
