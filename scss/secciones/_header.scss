@@ -1,0 +1,10 @@
+.header {
+    font-family: $roboto;
+    &__img {
+        height: 100px;
+        width: 100px;
+    }
+    &__ul--active{
+        font-weight: 900;
+    }
+}
