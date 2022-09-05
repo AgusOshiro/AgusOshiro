@@ -1,0 +1,12 @@
+%estiloTitulo {
+    text-align:center ;
+    font-family: $roboto;
+    padding: 2rem;
+    color: black;
+}
+
+//mixin
+@mixin fontStyle {
+    background-color: $naranja;
+    
+}

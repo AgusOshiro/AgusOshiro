@@ -5,11 +5,14 @@
 }
 
 
+
 @import "./variables/tamanios";
 @import "./variables/typo";
 @import "./variables/colores";
+@import "./variables/extend";
 
 
 @import "./secciones/header";
 @import "./secciones/mainindex";
-@import "./secciones/footer"
+@import "./secciones/footer";
+@import "./secciones/mediaquerys";
