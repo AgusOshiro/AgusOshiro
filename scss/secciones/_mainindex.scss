@@ -1,4 +1,5 @@
 .main {
+    min-height: 80vh;
     background-color: $blanco;
     font-family: $roboto;
 
@@ -7,16 +8,11 @@
         width: 100%;
     }
 
-    .titulo {
-        @extend %estiloTitulo;
-        @include fontStyle
-    }
-
-    .contenedorProductos {
+    .contenedorProductos{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 7rem;
+        padding: 3rem;
 
         .producto {
             display: flex;
@@ -28,87 +24,108 @@
             background-color: white;
             margin-left: 20px;
             margin-bottom: 5rem;
-
-
+            text-align: center;
+    
+    
             .contBtn {
                 width: 100%;
             }
-
+    
             .imgProd {
-
+    
                 .imgZapa {
                     width: 100%;
                     height: 20rem;
                     border-radius: 5%;
                 }
             }
+        
+         }
 
-        }
     }
 
+    .titulo {
+        @extend %estiloTitulo;
+        @include fontStyle
+    }
+
+    .btnComprar:hover {
+        border-radius: 20px;
+        transition: 2s;
+        background-color: black;
+        color: white;
+    }
+    
+    //HOMBRE/MUJER
     .grid-container {
         display: grid;
         max-width: 100%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         align-items: center;
+        justify-content: center;
         justify-items: center;
-        grid-template-areas:
-            "gridForm zapa1 zapa2"
-            "gridForm zapa3 zapa4"
-            ". zapa5 zapa6"
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        grid-template-areas: 
+        "gridForm zapa1 zapa2"
+        "gridForm zapa3 zapa4" 
+        "gridForm zapa5 zapa6"
         ;
-
-        img {
-            width: 250px;
+        
+        .card {
+            text-align: center;
+            margin: 1rem;
+            align-items: center;
         }
 
+        img{
+            width: 250px;
+        }
     }
-
     .gridForm {
         grid-area: gridForm;
     }
+    .zapa1 {grid-area: zapa1;}
+    .zapa2 {grid-area: zapa2;}
+    .zapa3 {grid-area: zapa3;}
+    .zapa4 {grid-area: zapa4;}
+    .zapa5 {grid-area: zapa5;}
+    .zapa6 {grid-area: zapa6;}
 
-    .zapa1 {
-        grid-area: zapa1;
-    }
-
-    .zapa2 {
-        grid-area: zapa2;
-    }
-
-    .zapa3 {
-        grid-area: zapa3;
-    }
-
-    .zapa4 {
-        grid-area: zapa4;
-    }
-
-    .zapa5 {
-        grid-area: zapa5;
-    }
-
-    .zapa6 {
-        grid-area: zapa6;
-    }
-
-    .container-fluid {
-        padding: 4rem;
-
-        .grid-title {
-            text-align: center;
-            
+    @media (max-width:858px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "gridForm gridForm"
+            "zapa1 zapa2"
+            "zapa3 zapa4"
+            "zapa5 zapa6"
+            ;
+            justify-items: center;
+    
         }
+        
+    }
 
-        .col-lg-6 {
-            display: flex;
-            justify-content: center;
-        }
-        .parrafo {
-            font-weight: 300;
-            font-size: 1.35rem;
-            padding: 3rem;
+    @media (max-width:596px) {
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas: 
+            "gridForm"
+            "zapa1"
+            "zapa2"
+            "zapa3"
+            "zapa4"
+            "zapa5"
+            "zapa6"
+            ;
         }
     }
 }
+
+
+
+

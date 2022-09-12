@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/sneaker-logo.jpg">
+    <script src="https://kit.fontawesome.com/d06700c0a7.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/sneaker-logo.jpg">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <meta name="Keywords" content="Calzado, niño, masculino, femenino">
-        <meta name="description" content="Si tenes hijos y estas buscando zapatillas, este es tu lugar ideal">
-        <title>Oshi Shop</title>
+    <meta name="Keywords" content="Calzado, hombre, masculino">
+    <meta name="description" content="Si sos hombre y estas buscando zapatillas, este es tu lugar ideal">
+    <title>Oshi Shop</title>
 </head>
 
 <body>
@@ -53,19 +54,19 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
 
         <!-- banner -->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../img/hombre-banner.jpg" class="d-block w-100" alt="Hombre">
+                <img src="../img/niños.jpg" class="d-block w-100" alt="Niños">
               </div>
               <div class="carousel-item">
-                <img src="../img/carousel2hombre.jpg" class="d-block w-100" alt="Hombre">
+                <img src="../img/niños2.jpg" class="d-block w-100" alt="Niños">
               </div>
               <div class="carousel-item">
-                <img src="../img/carousel3hombre.jpg" class="d-block w-100" alt="Hombre">
+                <img src="../img/niños3.jpg" class="d-block w-100" alt="Niños">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -81,11 +82,11 @@
 
 
         <h1 class="titulo">Niños</h1>
+    
         <div class="grid-container">
             <div class="gridForm">
 
                 <h2>Filtro</h2>
-
                 <form action="#" method="get">
                     <label for="Marca">Marca</label>
                     <select name="Marca">
@@ -101,10 +102,10 @@
 
                     <label for="Talle">Talle</label>
                     <select name="Talle">
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
                     </select>
 
                     <br><br>
@@ -120,81 +121,93 @@
 
                     <br><br>
 
+                    <label for="Deporte">Deporte</label>
+                    <select name="Deporte" id="">
+                        <option value="Futbol">Futbol</option>
+                        <option value="Basquet">Basquet</option>
+                        <option value="Running">Running</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Skate">Skate</option>
+                    </select>
+
+                    <br><br>
+
                     <input type="submit" class="btnComprar" value="Comprar">
                 </form>
             </div>
 
-
-
-
-
-
-            <div class="zapa1">
-                <div class="contTxtProd">
-                    <h3>Adidas NMD</h2>
-                        <p>$35.000</p>
+            <div class="card zapa1" style="width: 18rem;">
+                <img src="../img/adidaslego.jpg" class="card-img-top" alt="Adias Lego">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        ADIDAS Lego sport pro
+                    </h5>
+                    <p class="card-text">$25.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
                 </div>
-
-                <img src="../img/adidasnmd.jpg" alt="Adidas nmd r1">
-
-            </div>
-
-            <div class="zapa2">
-                <div class="contTxtProd">
-                    <h3>Puma rider</h2>
-                        <p>$40.000</p>
-                </div>
-
-                <img src="../img/pumariderdouble.jpg" alt="Puma rider">
-
-            </div>
-
-            <div class="zapa3">
-                <div class="contTxtProd">
-                    <h3>Vans old skool</h3>
-                    <p>$30.000</p>
-                </div>
-
-                <img src="../img/vans.jpg" alt="Vans u old skool">
-
-            </div>
-
-            <div class="zapa4">
-                <div class="contTxtProd">
-                    <h3>Asics gel-kaiteki</h3>
-                    <p>$20.000</p>
-                </div>
-
-                <img src="../img/asics.jpg" alt="Asics gel-kaiteki">
-
             </div>
 
 
-
-            <div class="zapa5">
-                <div class="contTxtProd">
-                    <h3>Nike Air max</h3>
-                    <p>$30.000</p>
+            <div class="card zapa2" style="width: 18rem;">
+                <img src="../img/nikecourt.jpg" class="card-img-top" alt="Nike court">
+                <div class="card-body">
+                    <h5 class="card-title">Nike court borough</h5>
+                    <p class="card-text">$35.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
                 </div>
-
-                <img src="../img/zapa1.jpg" alt="Nike jordan air 1 se">
-
-            </div>
-
-            <div class="zapa6">
-                <div class="contTxtProd">
-                    <h3>Mizuno sky premium</h3>
-                    <p>$25.000</p>
-                </div>
-
-
-                <img src="../img/mizuno.jpg" alt="Mizuno sky premium">
-
             </div>
 
 
+            <div class="card zapa3" style="width: 18rem;">
+                <img src="../img/asicsnoba.jpg" class="card-img-top" alt="Asics Nobablast">
+                <div class="card-body">
+                    <h5 class="card-title">Asics Nobablast</h5>
+                    <p class="card-text">$20.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="card zapa4" style="width: 18rem;">
+                <img src="../img/vanscandy.jpg" class="card-img-top" alt="Vans candy blast">
+                <div class="card-body">
+                    <h5 class="card-title">Vnas candy blast</h5>
+                    <p class="card-text">$30.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card zapa5" style="width: 18rem;">
+                <img src="../img/mizunocessar.jpg" class="card-img-top" alt="Mizuno cessar">
+                <div class="card-body">
+                    <h5 class="card-title">Mizuno cessar</h5>
+                    <p class="card-text">$30.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card zapa6" style="width: 18rem;">
+                <img src="../img/pumarider.jpg" class="card-img-top" alt="Puma rider play">
+                <div class="card-body">
+                    <h5 class="card-title">Puma rider play</h5>
+                    <p class="card-text">$40.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -203,34 +216,29 @@
     </main>
 
     <footer class="footer">
+        <ul class="footer__ul">
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-square-instagram footer__i"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook footer__i"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter footer__i"></i>
+                </a>
+            </li>
 
-
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-            </li>
-            <li>
-                <a href="https://twitter.com/home" target="_blank">Twitter</a>
-            </li>
         </ul>
-
-
-
         <hr>
         <div class="terminosYcondiciones">
-
-            <p>&copy Hecho con HTML por Agustin Oshiro, 2022</p>
-
-
+            <p class="footer__p">&copy 2022 sneakers Argentina</p>
             <a href="./contacto.html">Terminos y condiciones</a>
         </div>
-
-
-
-
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

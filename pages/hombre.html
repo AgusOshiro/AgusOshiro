@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/d06700c0a7.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-            <link rel="shortcut icon" href="../img/sneaker-logo.jpg">
-        <!-- Link CSS -->
-        <link rel="stylesheet" href="../css/style.css">
-        <meta name="Keywords" content="Calzado, hombre, masculino">
-        <meta name="description" content="Si sos hombre y estas buscando zapatillas, este es tu lugar ideal">
-        <title>Oshi Shop</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d06700c0a7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/sneaker-logo.jpg">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="Keywords" content="Calzado, hombre, masculino">
+    <meta name="description" content="Si sos hombre y estas buscando zapatillas, este es tu lugar ideal">
+    <title>Oshi Shop</title>
+</head>
 
 <body>
     <header class="header">
@@ -59,23 +59,25 @@
         <!-- banner -->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/hombre-banner.jpg" class="d-block w-100 main__img" alt="Hombre">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/carousel2hombre.jpg" class="d-block w-100 main__img" alt="Hombre">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/carousel3hombre.jpg" class="d-block w-100 main__img" alt="Hombre">
-              </div>
+                <div class="carousel-item active">
+                    <img src="../img/hombre-banner.jpg" class="d-block w-100 main__img" alt="Hombre">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carousel2hombre.jpg" class="d-block w-100 main__img" alt="Hombre">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carousel3hombre.jpg" class="d-block w-100 main__img" alt="Hombre">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
 
@@ -86,7 +88,6 @@
             <div class="gridForm">
 
                 <h2>Filtro</h2>
-
                 <form action="#" method="get">
                     <label for="Marca">Marca</label>
                     <select name="Marca">
@@ -121,85 +122,100 @@
 
                     <br><br>
 
+                    <label for="Deporte">Deporte</label>
+                    <select name="Deporte" id="">
+                        <option value="Futbol">Futbol</option>
+                        <option value="Basquet">Basquet</option>
+                        <option value="Running">Running</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Skate">Skate</option>
+                    </select>
+
+                    <br><br>
+
                     <input type="submit" class="btnComprar" value="Comprar">
                 </form>
             </div>
 
-
-
-
-
-
-            <div class="zapa1">
-                <div class="contTxtProd">
-                    <h3>Adidas NMD</h2>
-                        <p>$35.000</p>
+            <div class="card zapa1" style="width: 18rem;">
+                <img src="../img/adidasnmd.jpg" class="card-img-top" alt="Adias nmd r1">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        ADIDAS Nmd r1
+                    </h5>
+                    <p class="card-text">$35.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
                 </div>
-
-                <img src="../img/adidasnmd.jpg" alt="Adidas nmd r1">
-
-            </div>
-
-            <div class="zapa2">
-                <div class="contTxtProd">
-                    <h3>Puma rider</h2>
-                        <p>$40.000</p>
-                </div>
-
-                <img src="../img/pumariderdouble.jpg" alt="Puma rider">
-
-            </div>
-
-            <div class="zapa3">
-                <div class="contTxtProd">
-                    <h3>Vans old skool</h3>
-                    <p>$30.000</p>
-                </div>
-
-                <img src="../img/vans.jpg" alt="Vans u old skool">
-
-            </div>
-
-            <div class="zapa4">
-                <div class="contTxtProd">
-                    <h3>Asics gel-kaiteki</h3>
-                    <p>$20.000</p>
-                </div>
-
-                <img src="../img/asics.jpg" alt="Asics gel-kaiteki">
-
             </div>
 
 
-
-            <div class="zapa5">
-                <div class="contTxtProd">
-                    <h3>Nike Air max</h3>
-                    <p>$30.000</p>
+            <div class="card zapa2" style="width: 18rem;">
+                <img src="../img/pumariderdouble.jpg" class="card-img-top" alt="Puma rider">
+                <div class="card-body">
+                    <h5 class="card-title">Puma rider</h5>
+                    <p class="card-text">$40.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
                 </div>
-
-                <img src="../img/zapa1.jpg" alt="Nike jordan air 1 se">
-
-            </div>
-
-            <div class="zapa6">
-                <div class="contTxtProd">
-                    <h3>Mizuno sky premium</h3>
-                    <p>$25.000</p>
-                </div>
-
-
-                <img src="../img/mizuno.jpg" alt="Mizuno sky premium">
-
             </div>
 
 
+            <div class="card zapa3" style="width: 18rem;">
+                <img src="../img/vans.jpg" class="card-img-top" alt="Vans u old skool">
+                <div class="card-body">
+                    <h5 class="card-title">Vans u old skool</h5>
+                    <p class="card-text">$30.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="card zapa4" style="width: 18rem;">
+                <img src="../img/asics.jpg" class="card-img-top" alt="Asics gel-kaiteki">
+                <div class="card-body">
+                    <h5 class="card-title">Asics gel-kaiteki</h5>
+                    <p class="card-text">$20.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card zapa5" style="width: 18rem;">
+                <img src="../img/zapa1.jpg" class="card-img-top" alt="Nike jordan air 1 Se">
+                <div class="card-body">
+                    <h5 class="card-title">Nike jordan air max</h5>
+                    <p class="card-text">$30.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card zapa6" style="width: 18rem;">
+                <img src="../img/mizuno.jpg" class="card-img-top" alt="Mizuno sky premium">
+                <div class="card-body">
+                    <h5 class="card-title">Mizuno sky premium</h5>
+                    <p class="card-text">$25.000</p>
+                    <div class="contBtnComprar">
+                        <button class="btnComprar">Comprar</button>
+                    </div>
+                </div>
+            </div>
 
 
 
         </div>
+
+
+
 
     </main>
 
