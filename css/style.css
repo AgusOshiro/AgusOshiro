@@ -19,12 +19,14 @@
     font-weight: 900; }
 
 .main {
-  min-height: 80vh;
   background-color: #f6efee;
   font-family: "Roboto", sans-serif; }
   .main__img {
     height: 40rem;
     width: 100%; }
+  .main .d-flex {
+    justify-content: center;
+    padding: 30px; }
   .main .contenedorProductos {
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +49,11 @@
         width: 100%;
         height: 20rem;
         border-radius: 5%; }
+  .main .parrafo {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 3rem;
+    font-weight: 300; }
   .main .titulo {
     background-color: #ff5733; }
   .main .btnComprar:hover {

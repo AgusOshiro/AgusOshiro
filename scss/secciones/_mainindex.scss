@@ -1,11 +1,16 @@
 .main {
-    min-height: 80vh;
+    
     background-color: $blanco;
     font-family: $roboto;
 
     &__img {
         height: 40rem;
         width: 100%;
+    }
+
+    .d-flex {
+        justify-content: center;
+        padding: 30px;
     }
 
     .contenedorProductos{
@@ -44,9 +49,17 @@
 
     }
 
+    .parrafo {
+        font-family: $roboto;
+        text-align: center;
+        margin: 3rem;
+        font-weight: 300;
+
+    }
+
     .titulo {
         @extend %estiloTitulo;
-        @include fontStyle
+        @include fontStyle;
     }
 
     .btnComprar:hover {
