@@ -8,6 +8,10 @@
         width: 100%;
     }
 
+    .card:hover {
+        transform: skew(1.5deg);
+    }
+
     .d-flex {
         justify-content: center;
         padding: 30px;
@@ -52,7 +56,7 @@
     .parrafo {
         font-family: $roboto;
         text-align: center;
-        margin: 3rem;
+        
         font-weight: 300;
 
     }
@@ -60,6 +64,11 @@
     .titulo {
         @extend %estiloTitulo;
         @include fontStyle;
+    }
+
+    .btnComprar{
+        background-color: $amarillo;
+        border-radius: 20px;
     }
 
     .btnComprar:hover {
@@ -119,6 +128,7 @@
             justify-items: center;
     
         }
+
         
     }
 
@@ -135,6 +145,10 @@
             "zapa5"
             "zapa6"
             ;
+        }
+
+        img {
+            height: 20rem;
         }
     }
 }
